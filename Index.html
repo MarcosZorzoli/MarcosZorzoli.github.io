@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">        
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Marcos Zorzoli</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Quicksand&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+<div class="wrapper">
+    <header>
+        <nav class="navbar">
+            <div class="brand">
+                <h2>Marcos <span>Zorzoli</span></h2>
+             </div>
+                <ul class="menu">
+                    <li><a href="#sobre-mi">Sobre mi</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main class="main">    
+            <div class="info-content" id="sobre-mi" >
+                <h1>Marcos Zorzoli</h1>    
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, odio suscipit? Beatae inventore blanditiis sapiente assumenda consequatur consectetur sint itaque ab, impedit cupiditate fuga nihil delectus alias neque similique totam!</p>
+                <a download href="https://drive.google.com/file/d/199fwSQ8rn6pLsiJQYSUWhBP28yS8HG4-/view?usp=sharing" class="botoon" target="_blank">
+                    <button>Descargar CV</button>
+                </a> 
+            </div>
+            <div class="foto-content">
+                <img id="fotoCV" src="C:\Users\TT\Desktop\Proyectos web\Portfolio2\Imagenes\FOTO CV.jpg" alt="Foto de Marcos Zorzoli"><!--Columnas(3)-->
+            </div>        
+    </main>
+    <section id="proyectos">
+        <article class="textoGeneral" >
+            <a class="enlacesGit" href="https://github.com/MarcosZorzoli" target="_blank">
+                <h2>Proyectos</h2>
+            </a>
+            <p>Mi recorrido comienza en C y C++. En mi GitHub tengo subidos dos trabajos prácticos realizando ABML.
+            El primero es un gestionador de gastos e ingresos. El segundo es un cotizador de compra-venta.</p>
+            <a class="enlacesGit" href="https://github.com/MarcosZorzoli?tab=repositories" target="_blank">  
+            <div class="conjuntoFotos">
+                <img class="logos"  src="C:\Users\TT\Desktop\Proyectos web\Portfolio2\Imagenes\C.png" alt="Logo"><!--Columnas(3)-->
+                <img class="logos"  src="C:\Users\TT\Desktop\Proyectos web\Portfolio2\Imagenes\C++.png" alt="Logo">
+            </div>
+            </a>
+            <p>Actualmente estoy aprendiendo bases de datos relacionales con SQL Server, WinForms con C# .net, asp .net y web con HTML5 CSS3 y JavaScript. 
+            En GitHub se encuentra mi último TP realizado en winforms y con conexión a base de datos.
+            </p>
+            <a class="enlacesGit" href="https://github.com/MarcosZorzoli/TPWinForm_Equipo20" target="_blank">
+            <div class="conjuntoFotos">
+                <img class="logos" src="C:\Users\TT\Desktop\Proyectos web\Portfolio2\Imagenes\CSharp.png" alt="Logo">  
+                <img class="logos" src="C:\Users\TT\Desktop\Proyectos web\Portfolio2\Imagenes\SQL server.png" alt="Logo">
+            </div> 
+            </a>
+            <p>
+                En mi GitHub tengo subida una pagina de ejemplo para una prueba técnica, uno de mis primeros acercamientos a HTML y CSS.
+                También está mi portfolio disponible. 
+            </p>
+            <a class="enlacesGit" href="https://marcoszorzoli.github.io/Pagina-para-entrevista/" target="_blank">
+                <div class="conjuntoFotos">
+                    <img class="logos" src="C:\Users\TT\Desktop\Proyectos web\Portfolio2\Imagenes\HTML.png" alt="Logo">
+                    <img class="logos" src="C:\Users\TT\Desktop\Proyectos web\Portfolio2\Imagenes\CSS.png" alt="Logo">
+                    <img class="logos" src="C:\Users\TT\Desktop\Proyectos web\Portfolio2\Imagenes\JS.png" alt="Logo">
+                </div>
+            </a>
+            
+            <p>
+                Desde que empecé con mi carrera como programador, realicé la creación en grupo y de forma individual de 5 páginas web usando WordPress.
+            </p>
+            <div id="conjuntoSinLink"> 
+                <img class="logos" src="C:\Users\TT\Desktop\Proyectos web\Portfolio2\Imagenes\Logo_WordPress.png" alt="Logo">
+             </div>
+            </article>        
+
+            </section>
+
+    <section class="contacto" id="contacto">
+        <h2>Mis redes:</h2>
+
+        <a href="https://www.linkedin.com/in/marcos-zorzoli/" target="_blank">
+            <img class="logosC" src="C:\Users\TT\Desktop\Proyectos web\Portfolio2\Imagenes\Logo_LinkedIn.png" alt="Logo">
+        </a>
+        <a href="https://github.com/MarcosZorzoli" target="_blank">
+            <img class="logosC" src="C:\Users\TT\Desktop\Proyectos web\Portfolio2\Imagenes\Logo_GitHub.png" alt="Logo">
+        </a>
+        <a href="https://wa.me/+5491125372242" target="_blank">
+            <img class="logosC" src="C:\Users\TT\Desktop\Proyectos web\Portfolio2\Imagenes\Logo_Whatsapp.png" alt="Logo">
+        </a>
+    </section>  
+
+    <section class="formulario">
+        <h2>Formulario de contacto</h2>
+        <form
+        action="https://formspree.io/f/xoqzzqpw"
+        method="POST"
+        >
+        <label>
+          Nombre:
+        <input class="inputs" type="text" name="nombre" required>
+        </label>
+        <label>
+          Email:
+          <input class="inputs" type="email" name="email" required>
+        </label>
+        <label>
+          Consulta:
+          <textarea class="inputconsulta" name="message" required></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit" class="botoon">Enviar</button>
+      </form>
+    </section>
+</div>
+
+    </body>
+</html>
