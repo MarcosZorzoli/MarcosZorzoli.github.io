@@ -123,7 +123,8 @@ background-color:dimgray;
 transition:linear 0.1s;
 }
 .botoon{
-margin-left: 100px;
+margin-left: 130px;
+align-self: flex-end;
 }
 section{
     margin-bottom: 15px;
@@ -205,13 +206,17 @@ p{
 .logosC{
     width: 25%;
 }
-.formulario{
+.Formulario{
     width: 55%;
     height: 100%;
     display: flex;
     justify-content:space-around;
     justify-items: center;
-    align-items: center;
+    align-items: flex-start;
+}
+.Formulario label{
+    display: flex;
+    flex-direction: column;
 }
 
 .inputs{
@@ -222,4 +227,56 @@ p{
     margin: 5px;
     padding: 25px;
     padding-right:25px;
+}
+
+.Juego {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px){
+
+    .main{
+        grid-template-columns: 1fr;
+    }
+
+    .info-content{
+        padding: 20px;
+        margin: 0;
+    }
+
+    #fotoCV{
+        width: 80%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .botoon{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .contacto{
+        flex-direction: column;
+    }
+
+    .Formulario{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto h2{
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .logos{
+        width: 15%;
+    }
+
+    .menu{
+        flex-wrap: wrap;
+    }
 }
