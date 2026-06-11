@@ -1,144 +1,335 @@
-<!DOCTYPE html>
-<html lang="en">        
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Portfolio de Marcos Zorzoli</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Quicksand&display=swap" rel="stylesheet">
-    
-</head>
 
-<body>
-<div class="wrapper">
-    <header>
-        <nav class="navbar">
-            <div class="brand">
-                <h2>Marcos <span>Zorzoli</span></h2>
-             </div>
-                <ul class="menu">
-                    <li><a href="#sobre-mi">Sobre mi</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#juegos">JUEGOS</a></li>
-                </ul>
-        </nav>
-    </header>
-    <main class="main">    
-            <div class="info-content" id="sobre-mi" >
-                <h1>Marcos Zorzoli</h1>    
-                <p>Programador autodidacta.</p>
-                <a download href="https://drive.google.com/file/d/199fwSQ8rn6pLsiJQYSUWhBP28yS8HG4-/view?usp=sharing" class="botoon" target="_blank">
-                    <button>Descargar CV</button>
-                </a> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+ <!--Menu-->
+   
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Marcos Zorzoli</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#Recorrido">Recorrido</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Juegos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#MageVsDemons">Mage vs Demons</a></li>
+            <li><a class="dropdown-item" href="#BugaAlien">Buga Alien</a></li>
+            <li><a class="dropdown-item" href="#Recursos">Recursos visuales</a></li>
+
+          </ul>
+          <li class="nav-item">
+          <a class="nav-link" href="#Contacto">Contacto</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<br id="Recorrido"><br><br>
+<!--grid system-->
+<!--Maximo 12 columnas entre todas las div internas-->
+
+    <section class="container" >
+
+        <div class="row justify-content-center">
+
+            <div class="col-sm-12 col-md-8 col-lg-4 text-center">
+                <br><p>Me interesa la creación digital en distintas áreas, combinando programación, diseño y producción visual. Durante unos años estudiando programación en UTN comencé a profundizar en el desarrollo de software y, con el tiempo, fui incorporando diferentes herramientas y disciplinas a mis proyectos.
+
+                  En esos años participé en la creación de sitios web realizados con WordPress, tanto de manera individual como en equipo, colaborando también con la edición y preparación de imágenes. En el ultimo tiempo desarrollé proyectos propios de videojuegos con fines de aprendizaje y participando en todas las etapas de desarrollo.
+                  </p>
             </div>
-            <div class="foto-content">
-                <img id="fotoCV" src="Imagenes/FOTO CV.jpg" alt="Foto de Marcos Zorzoli"><!--Columnas(3)-->
-            </div>        
-    </main>
-    <section id="proyectos">
-        <article class="textoGeneral" >
-            <a class="enlacesGit" href="https://github.com/MarcosZorzoli" target="_blank">
-                <h2>Proyectos</h2>
-            </a>
-            <p>Mi recorrido comienza en C y C++ en UTN FRGP hace algunos años. En mi GitHub tengo subidos dos trabajos prácticos realizando ABML.
-            El primero es un gestionador de gastos e ingresos. El segundo es un cotizador de compra-venta.</p>
-            <a class="enlacesGit" href="https://github.com/MarcosZorzoli?tab=repositories" target="_blank">  
-            <div class="conjuntoFotos">
-                <img class="logos"  src="Imagenes/C.png" alt="Logo"><!--Columnas(3)-->
-                <img class="logos"  src="Imagenes/C++.png" alt="Logo">
+
+            <div class="col-sm-12 col-md-8 col-lg-4 d-flex justify-content-center align-items-center">
+              
+            <div class="card" style="width: 18rem;">
+            <img src="C:\Users\TT\Desktop\Nueva carpeta\Imagenes\FOTO CV.png" class="img-fluid" alt="Foto CV" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Marcos Zorzoli</h5>
+                <p class="card-text">Para tener mas información sobre mi recorrido laboral</p>
+                <a href="https://www.linkedin.com/in/marcos-zorzoli/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Linkedin</a>
             </div>
-            </a>
-            <p>Estudié bases de datos relacionales con SQL Server, WinForms con C#, asp.net y web con HTML5, CSS3 y JavaScript. 
-            En GitHub se encuentra mi último TP realizado en winforms y con conexión a base de datos.
-            </p>
-            <a class="enlacesGit" href="https://github.com/MarcosZorzoli/TPWinForm_Equipo20" target="_blank">
-            <div class="conjuntoFotos">
-                <img class="logos" src="Imagenes/CSharp.png" alt="Logo">  
-                <img class="logos" src="Imagenes/SQL server.png" alt="Logo">
-            </div> 
-            </a>
-            <p>
-                En mi GitHub tengo subida una pagina de ejemplo para una prueba técnica, uno de mis primeros acercamientos a HTML y CSS con límite de tiempo. 
-            </p>
-            <a class="enlacesGit" href="https://marcoszorzoli.github.io/Pagina-para-entrevista/" target="_blank">
-                <div class="conjuntoFotos">
-                    <img class="logos" src="Imagenes/HTML.png" alt="Logo">
-                    <img class="logos" src="Imagenes/CSS.png" alt="Logo">
-                    <img class="logos" src="Imagenes/JS.png" alt="Logo">
-                </div>
-            </a>
+            </div>
+            </div>
+
+        </div>
+
+
+        <div class="row justify-content-center">
             
-            <p>
-                Desde que empecé con mi carrera como programador, realicé de forma grupal e individual la creación de páginas web usando WordPress para una consultora, una banda de musica infantil, una administración de consorcios, y una pagina de venta de cursos.
-            </p>
-            <div id="conjuntoSinLink" id="contacto"> 
-                <img class="logos" src="Imagenes/Logo_WordPress.png" alt="Logo">
-             </div>
-            </article>        
 
-            </section >
+            <div class="col-sm-12 col-md-8 col-lg-4">
+                <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="C:\Users\TT\Desktop\Nueva carpeta\Imagenes\9.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="C:\Users\TT\Desktop\Nueva carpeta\Imagenes\8.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="C:\Users\TT\Desktop\Nueva carpeta\Imagenes\1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="C:\Users\TT\Desktop\Nueva carpeta\Imagenes\2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="C:\Users\TT\Desktop\Nueva carpeta\Imagenes\3.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="C:\Users\TT\Desktop\Nueva carpeta\Imagenes\4.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="C:\Users\TT\Desktop\Nueva carpeta\Imagenes\5.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="C:\Users\TT\Desktop\Nueva carpeta\Imagenes\6.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="C:\Users\TT\Desktop\Nueva carpeta\Imagenes\7.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="C:\Users\TT\Desktop\Nueva carpeta\Imagenes\Logo_GitHub.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="C:\Users\TT\Desktop\Nueva carpeta\Imagenes\Logo_WordPress.png" class="d-block w-100" alt="...">
+                    </div> 
+                  </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+            </div>
 
-    <section class="contacto">
-        <h2>Mis redes:</h2>
+            <div class="col-sm-12 col-md-8 col-lg-4 text-center">
+                            <p><br>Además, realizo trabajos de ilustración, arte vectorial y pixel art. Tengo recursos gráficos publicados para desarrolladores y actualmente colaboro en proyectos de videojuegos haciendo arte vectorial para fondos, plataformas, escenarios y animaciones. También desarrollé filtros interactivos para redes Instagram y Facebook hace unos años, aunque actualmente tengo publicados juegos/filtros en TikTok.
 
-        <a href="https://www.linkedin.com/in/marcos-zorzoli/" target="_blank">
-            <img class="logosC" src="Imagenes/Logo_LinkedIn.png" alt="Logo">
-        </a>
-        <a href="https://github.com/MarcosZorzoli" target="_blank">
-            <img class="logosC" src="Imagenes/Logo_GitHub.png" alt="Logo">
-        </a>
-        <a href="https://wa.me/+5491125372242" target="_blank">
-            <img class="logosC" src="Imagenes/Logo_Whatsapp.png" alt="Logo">
-        </a>
-                <a href="https://locotegames.itch.io/" target="_blank">
-            <img class="logosC" src="Imagenes/ItchIo.png" alt="Logo">
-        </a>
-    </section>  
-<section class="Juego">
-<h2>Mage vs Demons:</h2>
-<p> Actualmente es mi principal juego.<br>
-    Está en desarrollo pero hasta donde está subido se puede jugar.<br> 
-    Es un juego de plataforma realizado en Godot HTML5 que pretende tener mucho lore. </p>
+            Adobe Illustrator mi herramienta principal, tanto para proyectos digitales como para el diseño de tatuajes, actividad a la que me dedico profesionalmente desde hace 12 años.
 
-<iframe frameborder="0" src="https://itch.io/embed-upload/17837044?color=643232" allowfullscreen="" width="1152" height="668"><a href="https://locotegames.itch.io/magevsdemons">Play Mage vs Demons on itch.io</a></iframe>
-</section>
-<section class="Juego"  id="juegos">
-<h2>Buga Alien Precuela:</h2>
-<p> Es la precuela de mi primer juego de plataformas: <br>
-    BugaAlien, el cual realicé en Unreal Engine 5.<br>
-    La precuela de Buga Alien nació como una forma de empezar a probar<br>
-    Godot con    idea era aprender a hacer juegos que sean ejecutables web.</p>
+            Este portfolio reúne algunos de los proyectos que fui desarrollando a lo largo de ese recorrido.</p>
+            </div>
+          </div>
+          <hr id="MageVsDemons">
+          <br><br><br>
+          <div class="row justify-content-center">
 
-<iframe frameborder="0" src="https://itch.io/embed/4030884?bg_color=193d3f&amp;fg_color=b86f50&amp;link_color=fb922b&amp;border_color=529365" width="552" height="167"><a href="https://locotegames.itch.io/bugaalien">BugaAlien by LocoteGames</a></iframe>
-</section>
-<div>
-<section class="Formulario">
-    <h2>Formulario de contacto</h2>
-        <form
-        action="https://formspree.io/f/xoqzzqpw"
-        method="POST"
-        >
-        <label>
-          Nombre:
-        <input class="inputs" type="text" name="nombre" required>
-        </label>
-        <label>
-          Email:
-          <input class="inputs" type="email" name="email" required>
-        </label>
-        <label>
-          Consulta:
-          <textarea class="inputconsulta" name="message" required></textarea>
-        </label>
-        <!-- your other form fields go here -->
-        <button type="submit" class="botoon">Enviar</button>
-      </form>
+
+           <div class="col-sm-12 col-md-12 col-lg-12 text-center">          
+              <div class="d-flex position-relative">
+                <div>
+                  <h5 class="mt-0">Mage vs Demons</h5>
+                      <iframe frameborder="0" src="https://itch.io/embed/4090841?bg_color=3b0505&amp;fg_color=ffffff&amp;link_color=fa5c5c&amp;border_color=8a5858" width="552" height="167"><a href="https://locotegames.itch.io/magevsdemons">Mage vs Demons by LocoteGames</a></iframe>
+                      <p>Actualmente es mi principal juego.
+                        Está en desarrollo pero se puede jugar hasta donde está subido.
+                        Es un juego de plataforma realizado en Godot HTML5 que pretende tener mucho lore.
+                      </p>               
+                    </div>
+              </div>
+
+          <hr id="BugaAlien"><!--divisor-->
+              <br ><br><br>
+                <div class="d-flex position-relative">
+                <div>
+                  <h5 class="mt-0">Buga Alien  y Buga Alien Precuela</h5>
+
+                      <iframe frameborder="0" src="https://itch.io/embed/4030884?bg_color=193d3f&amp;fg_color=b86f50&amp;link_color=fb922b&amp;border_color=529365" width="552" height="167"><a href="https://locotegames.itch.io/bugaalien">BugaAlien by LocoteGames</a></iframe>
+                      <p>BugaAlien fue realizado en Unreal Engine 5 como primer juego version Desktop.
+                        La precuela de Buga Alien nació como una forma de empezar a probar
+                        Godot con la idea de aprender a hacer juegos que sean ejecutables web.</p>               
+                    </div>
+              </div>
+          </div>
+
+
+          <hr id="Contacto"><!--divisor-->
+          <br><br><br>
+            <div class="row justify-content-center">
+
+              <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+               <div class="Formulario">
+                    <h2>Formulario de contacto</h2>
+                        <form
+                        action="https://formspree.io/f/xoqzzqpw"
+                        method="POST"
+                        >
+                        <label>
+                          Nombre:
+                        <input class="inputs" type="text" name="nombre" required>
+                        </label>
+                        <label>
+                          Email:
+                          <input class="inputs" type="email" name="email" required>
+                        </label>
+                        <label>
+                          Consulta:
+                          <textarea class="inputconsulta" name="message" required></textarea>
+                        </label>
+                        <!-- your other form fields go here -->
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+
+                      </form>
+                    </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-8 text-center justify-content-center align-items-center">
+
+                <div>
+                  <br><br>
+                    <h3>Mis redes:</h3>
+                </div>
+<br><br><br>
+                <div>
+                    <a href="https://locotegames.itch.io/" target="_blank">
+                        <img class="Logos" src="Imagenes/ItchIo.png" alt="Logo">
+                    </a>
+               
+                     <a href="https://www.linkedin.com/in/marcos-zorzoli/" target="_blank">
+                        <img class="Logos" src="Imagenes/Logo_LinkedIn.png" alt="Logo">
+                    </a>
+       
+                    <a href="https://github.com/MarcosZorzoli" target="_blank">
+                        <img class="Logos" src="Imagenes/Logo_GitHub.png" alt="Logo">
+                    </a>
+
+                    <a href="https://wa.me/+5491125372242" target="_blank">
+                        <img class="Logos" src="Imagenes/Logo_Whatsapp.png" alt="Logo">
+                    </a>
+                    <a href="https://www.tiktok.com/@locotegames" target="_blank">
+                        <img class="Logos" src="Imagenes/LogoTikTok.png" alt="Logo">
+                    </a>
+                     <a href="https://www.youtube.com/@LocoteGames" target="_blank">
+                        <img class="Logos" src="Imagenes/LogoYoutube.png" alt="Logo">
+                    </a>
+                </div>
+            </div> 
+          </div>    
+          
+<hr id="Recursos"><br><br><br> 
+<H2>Recursos gráficos</H2>
+<br><br><br>
+              <h3 class="mt-0">-Tiny Dungeon Pixel art packs 16x16px </h3>
+                <p>Consta de 5 pack modulares. 4 de los 5 packs traen 1 player y 2 enemigos con sus animaciónes, un tileset de fondo y paredes de 1 bioma, 1 trampa animada y objetos de distinta indole. El 5to pack esta pensado como conector y ciudad costera, incluyendo NPC's y varias calidades, daños elementales y sus combinaciones para el arma de cada player de cada pack</p> 
+             <div class="row justify-content-center">
+                  <div class="col-sm-4 col-md-4 col-lg-4 ">
+                
+                  <iframe frameborder="0" src="https://itch.io/embed/4215265?border_width=5&amp;bg_color=eee199&amp;fg_color=215221&amp;link_color=0e064f&amp;border_color=7ba04c" width="216" height="175"><a href="https://locotegames.itch.io/tiny-dungeon-base-pack">Tiny Dungeon – Base Pack (Pixel Art 16x16) by LocoteGames</a></iframe>
+                  
+                  </div>
+                  
+                  <div class="col-sm-4 col-md-4 col-lg-4 ">
+
+                  <iframe frameborder="0" src="https://itch.io/embed/4218065?border_width=5&amp;bg_color=eee199&amp;fg_color=215221&amp;link_color=0e064f&amp;border_color=7ba04c" width="216" height="175"><a href="https://locotegames.itch.io/tiny-dungeon-rogue-undead-pack">Tiny Dungeon – Rogue &amp; Undead Pack  (Pixel Art 16x16) by LocoteGames</a></iframe>
+        
+                  </div>
+
+                  <div class="col-sm-4 col-md-4 col-lg-4 ">
+                  
+                  <iframe frameborder="0" src="https://itch.io/embed/4226795?border_width=5&amp;bg_color=eee199&amp;fg_color=215221&amp;link_color=0e064f&amp;border_color=7ba04c" width="216" height="175"><a href="https://locotegames.itch.io/tiny-dungeon-demonic-depths-pack">Tiny Dungeon – Demonic depths &amp; Barbarian (Pixel Art 16x16) by LocoteGames</a></iframe>
+                  
+                  </div>
+                  
+                  <div class="col-sm-4 col-md-4 col-lg-4 ">
+
+                    <iframe frameborder="0" src="https://itch.io/embed/4240493?border_width=5&amp;bg_color=eee199&amp;fg_color=215221&amp;link_color=0e064f&amp;border_color=7ba04c" width="216" height="175"><a href="https://locotegames.itch.io/tiny-dungeon-goblins-archer">Tiny Dungeon – Goblins &amp; Archer (Pixel Art 16x16) by LocoteGames</a></iframe>
+        
+                  </div>
+
+                  <div class="col-sm-4 col-md-4 col-lg-4 ">
+                  
+                  <iframe frameborder="0" src="https://itch.io/embed/4321569?border_width=5&amp;bg_color=eee199&amp;fg_color=215221&amp;link_color=0e064f&amp;border_color=7ba04c" width="216" height="175"><a href="https://locotegames.itch.io/tiny-dungeon-harbor-city-weapons-pack">Tiny Dungeon – Harbor City Trade &amp; Quest Hub + Weapons Pack (Pixel Art 16x16) by LocoteGames</a></iframe>
+                  
+                  </div>
+
+
+            </div>
+
+
+<hr>
+<br><br>
+            <div class="row justify-content-center">
+            
+            <div class="col-sm-12 col-md-12 col-lg-12">
+
+              <h3 class="mt-0">-Zombie Slayer Packs! Pixel art 16 x 16 px </h3>
+                <p>Consta de 5 pack modulares. 4 de los 5 packs traen 1 player y 2 enemigos con sus animaciónes, un tileset de fondo y paredes de 1 bioma, 1 trampa animada y objetos de distinta indole. El 5to pack esta pensado como conector y ciudad costera, incluyendo NPC's y varias calidades, daños elementales y sus combinaciones para el arma de cada player de cada pack</p> 
+            </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 ">
+                
+                  <iframe frameborder="0" src="https://itch.io/embed/4232802?border_width=5&amp;bg_color=f9e7c8&amp;fg_color=222222&amp;link_color=942b2b&amp;border_color=b84f4f" width="216" height="175"><a href="https://locotegames.itch.io/zombie-slayer-pack">Zombie Slayer Pack (Pixel Art 16x16) by LocoteGames</a></iframe>
+                  </div>
+
+                  <div class="col-sm-6 col-md-6 col-lg-6 ">
+
+                  <iframe frameborder="0" src="https://itch.io/embed/4247196?border_width=5&amp;bg_color=f9e7c8&amp;fg_color=222222&amp;link_color=942b2b&amp;border_color=b84f4f" width="216" height="175"><a href="https://locotegames.itch.io/zombie-slayer-expansion-pack">Zombie Slayer Expansion Pack (Pixel Art 16x16) by LocoteGames</a></iframe>
+                  </div>
+
+              </div>
+
+<hr>
+<br><br>
+            <div class="row justify-content-center">
+            
+            <div class="col-sm-12 col-md-12 col-lg-12">
+
+              <h3 class="mt-0">-Sprites gratuitos </h3>
+                <p>Consta de 3 pack. 2 packs contienen enemigos con sus animaciones. El otro pack es un fondo con capas para realizar efecto parallax. Todos estos packs fueron realizados en pixel art</p> 
+            </div>
+                <div class="col-sm-4 col-md-4 col-lg-4 ">
+                
+                  <iframe frameborder="0" src="https://itch.io/embed/4082358?border_width=5&amp;bg_color=f9e7c8&amp;fg_color=222222&amp;link_color=942b2b&amp;border_color=b84f4f" width="216" height="175"><a href="https://locotegames.itch.io/free-floating-demon-animation-pixel-art">FREE Floating Demon Animation Pixel Art by LocoteGames</a></iframe>
+                  
+                  </div>
+                  
+                  <div class="col-sm-4 col-md-4 col-lg-4 ">
+
+                  <iframe frameborder="0" src="https://itch.io/embed/4073916?border_width=5&amp;bg_color=f9e7c8&amp;fg_color=222222&amp;link_color=942b2b&amp;border_color=b84f4f" width="216" height="175"><a href="https://locotegames.itch.io/free-skeleton-animation-pixel-art">FREE Skeleton Animation Pixel Art by LocoteGames</a></iframe>
+        
+                  </div>
+
+                  <div class="col-sm-4 col-md-4 col-lg-4 ">
+                  
+                  <iframe frameborder="0" src="https://itch.io/embed/4206242?border_width=5&amp;bg_color=f9e7c8&amp;fg_color=222222&amp;link_color=942b2b&amp;border_color=b84f4f" width="216" height="175"><a href="https://locotegames.itch.io/pixel-art-background-city-beach-road-parallax-2d-6-layers">FREE Pixel Art Background (City / Beach Road) Parallax 2D – 6 Layers by LocoteGames</a></iframe>        
+                  </div>
+
+                  <br><br><hr>
+
+              </div>
+
+
+
+
+         </div>
+
+
     </section>
-</div>
 
-    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ </body>
 </html>
